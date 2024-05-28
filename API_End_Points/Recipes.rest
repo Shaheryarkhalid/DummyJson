@@ -1,0 +1,15 @@
+# All Recipes
+# Will return first Recipes 20 by default
+# Accepts both limit and skip in query  example {?limit=10&skip=5}
+GET http://localhost:8080/Recipes
+
+###
+# Single Recipe
+# Will return one Recipe requested by ID
+GET http://localhost:8080/Recipes/r/123
+
+###
+# Search Recipes
+# Will return first 10 Recipes by default
+# Accepts both limit and skip in query  example {?limit=10&skip=5}
+GET http://localhost:8080/Recipes/search?Search=Eth

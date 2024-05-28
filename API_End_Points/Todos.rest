@@ -1,0 +1,50 @@
+# All Todos
+# Will return first Todos 20 by default
+# Accepts both limit and skip in query  example {?limit=10&skip=5}
+GET http://localhost:8080/todos
+
+###
+# Single Todo
+# Will return one todo requested by ID
+GET http://localhost:8080/todos/t/2
+
+###
+# Random Todo
+# Will return random Todo
+GET http://localhost:8080/todos/random
+
+
+###
+# Todo By User
+# Will return todo by the User requested in UserID
+# By default returns first 10
+# Accepts both limit and skip in query  example {?limit=10&skip=5}
+GET http://localhost:8080/todos/user/1
+
+
+###
+# Add Todo
+# Must include all of mentioned parameters and parameters must be of same data type 
+# Parameters { todo: "string", userId: "number" }
+POST  http://localhost:8080/todos/add
+Content-Type: application/json
+
+{
+	"todo": "asd",
+	"userId": 23
+}
+
+###
+# Update Todo
+# Must be one of the mentioned parameters. And must have same data type
+# Parameters { todo: "string", userId: "number" }
+PUT  http://localhost:8080/todos/t/2
+Content-Type: application/json
+
+{
+	"userId" : 111
+}
+
+###
+# Delete Todo
+DELETE   http://localhost:8080/todos/t/201

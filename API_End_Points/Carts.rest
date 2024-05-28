@@ -1,0 +1,45 @@
+# All Carts
+# Will return first carts 20 by default
+# Accepts both limit and skip in query  example {?limit=10&skip=5}
+GET http://localhost:8080/Carts/
+
+###
+# Single Cart
+# Will return one Cart requested by ID
+GET http://localhost:8080/Carts/c/1
+
+###
+# Carts by User
+# Will return Carts for the user requested in UserID
+GET http://localhost:8080/Carts/user/23
+
+###
+# Add Cart
+# Must include all of mentioned parameters and parameters must be of same data type 
+# Parameters {total : "number", discountedTotal : "number", userId : "number", totalProducts : "number", totalQuantity : "number", products: "array"}
+POST http://localhost:8080/Carts/add
+Content-Type: application/json
+
+{
+	"total" : 0, 
+	"discountedTotal" : 0,
+	"userId" : 0, 
+	"totalProducts" : 0, 
+	"totalQuantity" : 0, 
+	"products": []	
+}
+
+###
+# Update Cart
+# Must be one of the mentioned parameters. And must have same data type
+# Parameters {total : "number", discountedTotal : "number", userId : "number", totalProducts : "number", totalQuantity : "number", products: "array"}
+PUT http://localhost:8080/Carts/c/1
+Content-Type: application/json
+
+{
+	"total" : 223
+}
+
+### 
+# Delete Cart
+DELETE  http://localhost:8080/Carts/c/1

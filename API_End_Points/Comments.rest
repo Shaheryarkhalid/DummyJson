@@ -1,0 +1,51 @@
+# All Comments
+# Will return first comment 20 by default
+# Accepts both limit and skip in query  example {?limit=10&skip=5}
+GET http://localhost:8080/comments
+
+###
+# Single Comment
+# Will return one Comment requested by ID
+GET http://localhost:8080/comments/c/123
+
+###
+# Comment by Post
+# Will return Comment for the Post requested in PostID
+GET http://localhost:8080/comments/post/40
+
+###
+# Add Comment
+# Must include all of mentioned parameters and parameters must be of same data type 
+# Parameters { body : "string", postId : "number", likes : "number", user : { id : "number",  username: "string", fullName: "string" })
+POST  http://localhost:8080/comments/add
+Content-Type: application/json
+
+{
+	"body" : "",
+	"postId" : 12,
+	"likes" : 2,
+	"user" : {
+		"id" : 1,
+		"username" : "",
+		"fullName" : ""
+	}
+}
+###
+# Update Comment
+# Must be one of the mentioned parameters. And must have same data type
+# Parameters { body : "string", postId : "number", likes : "number", user : { id : "number",  username: "string", fullName: "string" })
+
+PUT  http://localhost:8080/comments/c/40
+Content-Type: application/json
+
+{
+	"user" : {
+		"id" : 2,
+		"username" : "asdf",
+		"fullName" : "324"
+	}
+}
+
+###
+# Delete Cart
+DELETE   http://localhost:8080/comments/c/201
