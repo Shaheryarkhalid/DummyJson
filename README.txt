@@ -1,7 +1,7 @@
 
 ================================================= All Api End Points =========================================================
 
-///////////////////////////////////////////////// Auth ///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Auth //////////////////////////////////////////////////////
 
 #  User Login 
 #  Parameters must include Email and Password 
@@ -32,7 +32,7 @@ POST http://localhost:8080/auth/refresh
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJtYWlkZW5OYW1lIjoiU21pdGgiLCJhZ2UiOjI4LCJnZW5kZXIiOiJmZW1hbGUiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwicGhvbmUiOiIrODEgOTY1LTQzMS0zMDI0IiwidXNlcm5hbWUiOiJlbWlseXMiLCJwYXNzd29yZCI6ImVtaWx5c3Bhc3MiLCJiaXJ0aERhdGUiOiIxOTk2LTUtMzAiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJibG9vZEdyb3VwIjoiTy0iLCJoZWlnaHQiOjE5My4yNCwid2VpZ2h0Ijo2My4xNiwiZXllQ29sb3IiOiJHcmVlbiIsImhhaXIiOnsiY29sb3IiOiJCcm93biIsInR5cGUiOiJDdXJseSJ9LCJpcCI6IjQyLjQ4LjEwMC4zMiIsImFkZHJlc3MiOnsiYWRkcmVzcyI6IjYyNiBNYWluIFN0cmVldCIsImNpdHkiOiJQaG9lbml4Iiwic3RhdGUiOiJNaXNzaXNzaXBwaSIsInN0YXRlQ29kZSI6Ik1TIiwicG9zdGFsQ29kZSI6IjI5MTEyIiwiY29vcmRpbmF0ZXMiOnsibGF0IjotNzcuMTYyMTMsImxuZyI6LTkyLjA4NDgyNH0sImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIn0sIm1hY0FkZHJlc3MiOiI0NzpmYTo0MToxODplYzplYiIsInVuaXZlcnNpdHkiOiJVbml2ZXJzaXR5IG9mIFdpc2NvbnNpbi0tTWFkaXNvbiIsImJhbmsiOnsiY2FyZEV4cGlyZSI6IjAzLzI2IiwiY2FyZE51bWJlciI6IjkyODk3NjA2NTU0ODE4MTUiLCJjYXJkVHlwZSI6IkVsbyIsImN1cnJlbmN5IjoiQ05ZIiwiaWJhbiI6IllQVVhJU09CSTdUVEhQSzJCUjNIQUlYTCJ9LCJjb21wYW55Ijp7ImRlcGFydG1lbnQiOiJFbmdpbmVlcmluZyIsIm5hbWUiOiJEb29sZXksIEtvemV5IGFuZCBDcm9uaW4iLCJ0aXRsZSI6IlNhbGVzIE1hbmFnZXIiLCJhZGRyZXNzIjp7ImFkZHJlc3MiOiIyNjMgVGVudGggU3RyZWV0IiwiY2l0eSI6IlNhbiBGcmFuY2lzY28iLCJzdGF0ZSI6Ildpc2NvbnNpbiIsInN0YXRlQ29kZSI6IldJIiwicG9zdGFsQ29kZSI6IjM3NjU3IiwiY29vcmRpbmF0ZXMiOnsibGF0Ijo3MS44MTQ1MjUsImxuZyI6LTE2MS4xNTAyNjN9LCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyJ9fSwiZWluIjoiOTc3LTE3NSIsInNzbiI6IjkwMC01OTAtMjg5IiwidXNlckFnZW50IjoiTW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTVfNykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk2LjAuNDY2NC45MyBTYWZhcmkvNTM3LjM2IiwiY3J5cHRvIjp7ImNvaW4iOiJCaXRjb2luIiwid2FsbGV0IjoiMHhiOWZjMmZlNjNiMmE2YzAwM2YxYzMyNGMzYmZhNTMyNTkxNjIxODFhIiwibmV0d29yayI6IkV0aGVyZXVtIChFUkMyMCkifSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE2NjU3NDc5LCJleHAiOjE3MTY2NjEwMTl9.uKQQ-VzvFqAAlgUF6_QgcKHTfb27JJabAVcuQOzRSZI
 
 
-///////////////////////////////////////////////// Carts ///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Carts /////////////////////////////////////////////////
 
 # All Carts
 # Will return first carts 20 by default
@@ -81,7 +81,7 @@ Content-Type: application/json
 DELETE  http://localhost:8080/Carts/c/1
 
 
-///////////////////////////////////////////////// Comments ///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Comments /////////////////////////////////////////////////
 
 # All Comments
 # Will return first comment 20 by default
@@ -135,7 +135,7 @@ Content-Type: application/json
 # Delete Cart
 DELETE   http://localhost:8080/comments/c/201
 
-///////////////////////////////////////////////// Posts ///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Posts /////////////////////////////////////////////
 
 
 # All Posts
@@ -209,7 +209,7 @@ Content-Type: application/json
 # Delete Cart
 DELETE http://localhost:8080/posts/p/201
 
-///////////////////////////////////////////////// Products ///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Products ///////////////////////////////////////////////
 
 
 # All Product
@@ -279,7 +279,7 @@ Content-Type: application/json
 DELETE  http://localhost:8080/Products/Product/206
 
 
-///////////////////////////////////////////////// Quotes ///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Quotes //////////////////////////////////////////////
 
 # All Quotes
 # Will return first Quotes 20 by default
@@ -296,7 +296,7 @@ GET http://localhost:8080/Quotes/q/6
 # Will return random Quote
 GET http://localhost:8080/Quotes/random
 
-///////////////////////////////////////////////// Recipes ///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Recipes /////////////////////////////////////////////////
 
 
 # All Recipes
@@ -317,7 +317,7 @@ GET http://localhost:8080/Recipes/search?Search=Eth
 
 
 
-///////////////////////////////////////////////// Todos ///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Todos /////////////////////////////////////////////////
 
 # All Todos
 # Will return first Todos 20 by default
@@ -370,7 +370,7 @@ Content-Type: application/json
 # Delete Todo
 DELETE   http://localhost:8080/todos/t/201
 
-///////////////////////////////////////////////// Users ///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Users ///////////////////////////////////////////////
 
 
 
