@@ -96,7 +96,7 @@ DELETE  http://localhost:8080/Carts/c/1
 ```
 
 ## Comments
-* Modules : 
+* Modules : All Comments, Single Comment, Comment by Post, Add Comment, Update Comment, Delete Comment
 * URL : /comments/
 
 ### All Comments
@@ -105,4 +105,141 @@ DELETE  http://localhost:8080/Carts/c/1
 
 ```
 GET http://localhost:8080/comments
+```
+
+### Single Comment
+* Will return one Comment requested by ID
+
+```
+GET http://localhost:8080/comments/c/123
+```
+
+### Comment by Post
+* Will return Comment for the Post requested in PostID
+
+```
+GET http://localhost:8080/comments/post/40
+```
+
+### Add Comment
+* Must include all of mentioned parameters and parameters must be of same data type 
+* Parameters : { body : "string", postId : "number", likes : "number", user : { id : "number",  username: "string", fullName: "string" }
+```
+POST  http://localhost:8080/comments/add
+Content-Type: application/json
+
+{
+	"body" : "",
+	"postId" : 12,
+	"likes" : 2,
+	"user" : {
+		"id" : 1,
+		"username" : "",
+		"fullName" : ""
+	}
+}
+```
+
+### Update Comment
+* Must be one of the mentioned parameters. And must have same data type
+* Parameters { body : "string", postId : "number", likes : "number", user : { id : "number",  username: "string", fullName: "string" }
+```
+PUT  http://localhost:8080/comments/c/40
+Content-Type: application/json
+
+{
+	"user" : {
+		"id" : 2,
+		"username" : "asdf",
+		"fullName" : "324"
+	}
+}
+```
+
+### Delete Comment
+```
+DELETE   http://localhost:8080/comments/c/201
+```
+
+## Posts
+* Modules : All Posts, Single Post, Search Posts, Sort Posts, Post By User, Add Post, Update post, Delete Post
+* URL : /posts/
+
+### All Posts
+* Will return first posts 20 by default
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/posts
+```
+### Single Post
+* Will return one Post requested by ID
+```
+GET http://localhost:8080/posts/p/1
+```
+
+### Search Posts
+* Will return first posts 10 by default
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/posts/search?Search=it
+```
+
+### Sort Posts
+* Sort by Property must be type of either string or number
+* Will sort by the provided property. Also accepts order whether ascending or descending
+* By Default sorts in ascending way
+* By Default returns first 10
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/posts/sort?sortby=id&order=desc
+```
+
+### Post By User
+* Will return Posts by the User requested in UserID
+* By default returns first 10
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/posts/user/112
+```
+
+### Add Post
+* Must include all of mentioned parameters and parameters must be of same data type 
+* Parameters { title : "string", body : "string", views : "number", tags: "array", reactions : { likes : "number",  dislikes: "number" }}
+
+```
+POST http://localhost:8080/posts/add
+Content-Type: application/json
+
+{
+	"title" : "sdf",
+	"body" : "asdf",
+	"views" : 211,
+	"userId" : 12,
+	"tags" : [],
+	"reactions" : {
+		"likes": 200,
+		"dislikes":100
+	}
+}
+```
+
+### Update post
+* Must be one of the mentioned parameters. And must have same data type
+* Parameters { title : "string", body : "string", views : "number", tags: "array", reactions : { likes : "number",  dislikes: "number" }}
+```
+PUT  http://localhost:8080/posts/p/112
+Content-Type: application/json
+
+{
+	"title" : "Yes The ship rolls and her timbers creak lik",
+	"reactions" : {
+		"likes":2,
+		"dislikes":2
+	}
+}
+```
+
+### Delete Post
+```
+DELETE http://localhost:8080/posts/p/201
 ```
