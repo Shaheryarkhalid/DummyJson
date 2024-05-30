@@ -1,4 +1,5 @@
 # All API End Points
+* Auth, Users, Products, Carts, Posts, Comments, Quotes, Recipes, Todos  
 
 ## Auth 
 * Modules : User Login, Current Authenticated User, Refresh Auth Token
@@ -14,7 +15,7 @@
 * Auth Token will have expiry time of 59 minutes.
 
 ```diff
- POST http://localhost:8080/auth/login
+POST http://localhost:8080/auth/login
 Content-Type : application/json
 
 {
@@ -424,8 +425,8 @@ DELETE   http://localhost:8080/todos/t/201
 ```
 
 ## Users
-* Modules : 
-* URL : 
+* Modules : All User, Single User, Search Users, Filter Users, Sort Users, Add User, Update post, Delete User
+* URL : /Users/
 
 ### - All User
 * Will return first Users 20 by default
