@@ -243,3 +243,253 @@ Content-Type: application/json
 ```
 DELETE http://localhost:8080/posts/p/201
 ```
+
+## Products
+* Modules : All Product, Single Product, Search Products, Product Categories, Products By Category, Add Product, Update Product, Delete Product
+* URL : /Products/
+
+### - All Product
+* Will return first Products 20 by default
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/Products
+```
+
+### - Single Product
+* Will return one Product requested by ID
+```
+GET http://localhost:8080/Products/p/5
+```
+
+### - Search Products
+* Will return first Products 5 by default
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/Products/search?Search=E
+```
+### - Product Categories
+* Will return all Procuct Categories
+```
+	GET http://localhost:8080/Products/Categories
+```
+
+### - Products By Category
+* Will return all Procucts by Categories
+* Accepts both limit and skip. By default returns first 20
+```
+GET http://localhost:8080/Products/Category/smartphones
+```
+
+### - Add Product
+* Must include all of mentioned parameters and parameters must be of same data type 
+* Parameters {"title" : "string",	"description" : "string" , "price" : "number" , "discountPercentage" : "number" ,"rating" : "number" , "stock" : "number" , "brand" : "string" , "category" : "string" ,"thumbnail" : "string" , "images" : "array"}
+```
+POST  http://localhost:8080/Products/add
+Content-Type: application/json
+
+{
+	"title" : "",	
+	"description" : "string" , 
+	"price" : "number" , 
+	"discountPercentage" : "number" ,
+	"rating" : "number" , 
+	"stock" : "number" , 
+	"brand" : "string" , 
+	"category" : "string" ,
+	"thumbnail" : "string" , 
+	"images" : "array"
+}
+```
+### - Update Product
+* Must be one of the mentioned default parameters or the parameter that is manually added in add Product. And must have same data type
+* Parameters {"title" : "string",	"description" : "string" , "price" : "number" , "discountPercentage" : "number" ,"rating" : "number" , "stock" : "number" , "brand" : "string" , "category" : "string" ,"thumbnail" : "string" , "images" : "array"}
+```
+PUT http://localhost:8080/Products/p/5
+Content-Type: application/json
+
+{
+	"firstName" : "Bull Shit"
+}
+```
+### - Delete Product
+```
+DELETE  http://localhost:8080/Products/Product/206
+```
+
+## Quotes
+* Modules : All Quotes, Single Quote, Random Quote
+* URL : /Quotes/
+
+### - All Quotes
+* Will return first Quotes 20 by default
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/Quotes
+```
+
+### - Single Quote
+* Will return one Quote requested by ID
+```
+GET http://localhost:8080/Quotes/q/6
+```
+### - Random Quote
+* Will return random Quote
+```
+GET http://localhost:8080/Quotes/random
+```
+
+## Recipes
+* Modules : All Recipes, Single Recipe, Search Recipes  
+* URL : /Recipes/
+
+### - All Recipes
+* Will return first Recipes 20 by default
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/Recipes
+```
+
+### - Single Recipe
+* Will return one Recipe requested by ID
+```
+GET http://localhost:8080/Recipes/r/123
+```
+### - Search Recipes
+* Will return first 10 Recipes by default
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/Recipes/search?Search=Eth
+```
+
+## Todos
+* Modules : All Todos, Single Todo, Random Todo, Todo By User, Add Todo, Update Todo, Delete Todo
+* URL : /Todos/
+
+### - All Todos
+* Will return first Todos 20 by default
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/todos
+```
+
+### - Single Todo
+* Will return one todo requested by ID
+```
+GET http://localhost:8080/todos/t/2
+```
+
+### - Random Todo
+* Will return random Todo
+```
+GET http://localhost:8080/todos/random
+```
+
+### - Todo By User
+* Will return todo by the User requested in UserID
+* By default returns first 10
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/todos/user/1
+```
+
+### - Add Todo
+* Must include all of mentioned parameters and parameters must be of same data type 
+* Parameters { todo: "string", userId: "number" }
+
+```
+POST  http://localhost:8080/todos/add
+Content-Type: application/json
+
+{
+	"todo": "asd",
+	"userId": 23
+}
+```
+
+### - Update Todo
+* Must be one of the mentioned parameters. And must have same data type
+* Parameters { todo: "string", userId: "number" }
+
+```
+PUT  http://localhost:8080/todos/t/2
+Content-Type: application/json
+
+{
+	"userId" : 111
+}
+```
+### - Delete Todo
+```
+DELETE   http://localhost:8080/todos/t/201
+```
+
+## Users
+* Modules : 
+* URL : 
+
+### - All User
+* Will return first Users 20 by default
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/Users
+```
+### - Single User
+* Will return one User requested by ID
+```
+GET http://localhost:8080/Users/user/5
+```
+
+### - Search Users
+* Will return first Users 5 by default
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/Users/search?Search=Emily Smith Johnson
+```
+
+### - Filter Users
+* Can be Single property or could be nested properties seperated by "." in key 
+* Will Return filtered Users by provided property or nested property's value
+* Accepts Both limit and skip in query example {?limit=2&skip=1} 
+```
+GET http://localhost:8080/Users/filter?key=hair.color&value=Red
+```
+
+### - Sort Users
+* Sort by Property must be type of either string or number
+* Will sort by the provided property. Also accepts order whether ascending or descending
+* By Default sorts in ascending way
+* By Default returns first 10
+* Accepts both limit and skip in query  example {?limit=10&skip=5}
+```
+GET http://localhost:8080/Users/sort?sortby=firstName&order=desc&limit=2&skip=1
+```
+
+### - Add User
+* Some Fields will be added by default for future sorting or other actions
+```
+POST  http://localhost:8080/Users/add
+Content-Type: application/json
+
+{
+	"firstName" : "shaheryar",
+	"password" : "fsdfd"
+
+}
+```
+
+### - Update post
+* Must be one of the mentioned default parameters or the parameter that is manually added in add User. And must have same data type
+* Must match Data type already provided
+* { firstName: "", lastName: "", maidenName: "", age: 18,gender: "", email: "",phone: "",username: "",password: "",birthDate: "",image: "",bloodGroup: "",height: 0,weight: 0,eyeColor: "",hair: {  color: "",  type: ""},ip: "",address: {  address: "",  city: "",  state: "",  stateCode: "",  postalCode: "",  coordinates:    lat: 0,    lng: 0  },  country: ""},macAddress: "",university: "",bank: {  cardExpire: "",  cardNumber: "",  cardType: "",  currency: "",  iban: ""},company: {  department: "",  name: "",  title: "",  address: {    address: "",    city: "",    stateCode: "",    state: "",    postalCode: "",    coordinates: {      lat: 0,      lng: 0    },    country: ""  }},ein: "",ssn: "",userAgent: "",crypto: {  coin: "",  wallet: "",  network: ""},role: ""}
+```
+PUT http://localhost:8080/Users/user/5
+Content-Type: application/json
+
+{
+	"firstName" : "Shaheryar"
+}
+```
+### Delete User
+```
+DELETE  http://localhost:8080/Users/user/206
+```
