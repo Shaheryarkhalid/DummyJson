@@ -489,7 +489,7 @@ Content-Type: application/json
 	"firstName" : "Shaheryar"
 }
 ```
-### Delete User
+### - Delete User
 ```
 DELETE  http://localhost:8080/Users/user/206
 ```
