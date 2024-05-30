@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node --watch --env-file=.env ./index.js ",
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js"
+	"start": "--env-file=.env node index.js"
   },
   "author": "",
   "license": "ISC",
