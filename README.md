@@ -1,3 +1,25 @@
+# MockMate API Suite
+MockMate API Suite is a comprehensive set of endpoints designed to facilitate API mocking and testing. It includes endpoints for various functionalities such as authentication, user management, product management, cart operations, post management, comment management, and more.
+
+With MockMate API Suite, users can simulate the behavior of a real API without relying on an actual backend. This allows developers to test their applications thoroughly and efficiently, ensuring they function correctly under different scenarios.
+
+Key features of MockMate API Suite include:
+
+- **Authentication**: Provides endpoints for user login, retrieving the current authenticated user, and refreshing authentication tokens.
+
+- **User Management**: Offers functionalities such as fetching user details, updating user information, and deleting user accounts.
+
+- **Product Management**: Allows users to retrieve all products, search for specific products, retrieve product categories, and add, update, or delete products.
+
+- **Cart Operations**: Supports operations related to shopping carts, including fetching all carts, retrieving a single cart, fetching carts by user, adding, updating, and deleting carts.
+
+- **Post Management**: Enables users to manage posts, including fetching all posts, retrieving a single post, searching for posts, sorting posts, fetching posts by user, adding, updating, and deleting posts.
+
+- **Comment Management**: Provides functionalities for managing comments, such as fetching all comments, retrieving a single comment, fetching comments by post, adding, updating, and deleting comments.
+
+MockMate API Suite is designed to be flexible and easy to use, making it an essential tool for developers looking to streamline their API testing and development process within the GitHub environment.
+With its intuitive RESTful endpoints, you can easily integrate it into your projects. Plus, you can run it locally for seamless testing and development
+
 # All API End Points
 * Auth, Users, Products, Carts, Posts, Comments, Quotes, Recipes, Todos  
 
@@ -27,7 +49,7 @@ fetch('http://localhost:8080/auth/login', {
 })
 ```
 
-REST:
+- REST:
 ```
 POST http://localhost:8080/auth/login
 Content-Type : application/json
@@ -88,7 +110,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROY
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 Javascrit(Fetch) : 
 ```
-	fetch("http://localhost:8080/Carts/")
+fetch("http://localhost:8080/Carts/")
 ```
 - REST : 
 ```
@@ -99,7 +121,7 @@ GET http://localhost:8080/Carts/
 * Will return one Cart requested by ID
 - Javascript(Fetch) : 
 ```
-	fetch("http://localhost:8080/Carts/c/1")
+fetch("http://localhost:8080/Carts/c/1")
 ```
 - REST : 
 ```
@@ -110,7 +132,7 @@ GET http://localhost:8080/Carts/c/1
 * Will return Carts for the user requested in UserID
 - Javascript(Fetch) :
 ```
-	fetch("http://localhost:8080/Carts/user/23")
+fetch("http://localhost:8080/Carts/user/23")
 ``` 
 - REST : 
 ```
@@ -122,20 +144,20 @@ GET http://localhost:8080/Carts/user/23
 * Parameters {total : "number", discountedTotal : "number", userId : "number", totalProducts : "number", totalQuantity : "number", products: "array"}
 * - Javascript(Fetch) :
 ```
-	fetch("http://localhost:8080/Carts/add",{
-		method: 'POST',
-		headers : {
-			'Content-Type' : 'application/json'
-		}
-		body : JSON.stringify({
-			total : 0, 
-			discountedTotal : 0,
-			userId : 0, 
-			totalProducts : 0, 
-			totalQuantity : 0, 
-			products: []	
-		}) 
-	})
+fetch("http://localhost:8080/Carts/add",{
+	method: 'POST',
+	headers : {
+		'Content-Type' : 'application/json'
+	}
+	body : JSON.stringify({
+		total : 0, 
+		discountedTotal : 0,
+		userId : 0, 
+		totalProducts : 0, 
+		totalQuantity : 0, 
+		products: []	
+	}) 
+})
 ```
 - REST : 
 ```
