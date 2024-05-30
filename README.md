@@ -13,14 +13,13 @@
 
 * Auth Token will have expiry time of 59 minutes.
 
-```
-POST http://localhost:8080/auth/login
-Content-Type : application/json
-
-{
-	"Email" : "emily.johnson@x.dummyjson.com",
-	"Password" : "emilyspass" 
-}
+```diff
++ POST http://localhost:8080/auth/login
+- Content-Type : application/json
+! {
+!	"Email" : "emily.johnson@x.dummyjson.com",
+!	"Password" : "emilyspass" 
+!}
 ```
 ### - Current Authenticated User
 * Authorization parameter in request must include Bearer followed by Authorization Token 
