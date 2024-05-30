@@ -13,7 +13,7 @@
 * Will return Authorization Token
 
 * Auth Token will have expiry time of 59 minutes.
-Javascript (Fetch):
+* Javascript (Fetch):
 ```
 fetch('http://localhost:8080/auth/login', {
   method: 'POST',
@@ -52,7 +52,7 @@ fetch(url , {
 	}
 })
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/auth/me
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJtYWlkZW5OYW1lIjoiU21pdGgiLCJhZ2UiOjI4LCJnZW5kZXIiOiJmZW1hbGUiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwicGhvbmUiOiIrODEgOTY1LTQzMS0zMDI0IiwidXNlcm5hbWUiOiJlbWlseXMiLCJwYXNzd29yZCI6ImVtaWx5c3Bhc3MiLCJiaXJ0aERhdGUiOiIxOTk2LTUtMzAiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJibG9vZEdyb3VwIjoiTy0iLCJoZWlnaHQiOjE5My4yNCwid2VpZ2h0Ijo2My4xNiwiZXllQ29sb3IiOiJHcmVlbiIsImhhaXIiOnsiY29sb3IiOiJCcm93biIsInR5cGUiOiJDdXJseSJ9LCJpcCI6IjQyLjQ4LjEwMC4zMiIsImFkZHJlc3MiOnsiYWRkcmVzcyI6IjYyNiBNYWluIFN0cmVldCIsImNpdHkiOiJQaG9lbml4Iiwic3RhdGUiOiJNaXNzaXNzaXBwaSIsInN0YXRlQ29kZSI6Ik1TIiwicG9zdGFsQ29kZSI6IjI5MTEyIiwiY29vcmRpbmF0ZXMiOnsibGF0IjotNzcuMTYyMTMsImxuZyI6LTkyLjA4NDgyNH0sImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIn0sIm1hY0FkZHJlc3MiOiI0NzpmYTo0MToxODplYzplYiIsInVuaXZlcnNpdHkiOiJVbml2ZXJzaXR5IG9mIFdpc2NvbnNpbi0tTWFkaXNvbiIsImJhbmsiOnsiY2FyZEV4cGlyZSI6IjAzLzI2IiwiY2FyZE51bWJlciI6IjkyODk3NjA2NTU0ODE4MTUiLCJjYXJkVHlwZSI6IkVsbyIsImN1cnJlbmN5IjoiQ05ZIiwiaWJhbiI6IllQVVhJU09CSTdUVEhQSzJCUjNIQUlYTCJ9LCJjb21wYW55Ijp7ImRlcGFydG1lbnQiOiJFbmdpbmVlcmluZyIsIm5hbWUiOiJEb29sZXksIEtvemV5IGFuZCBDcm9uaW4iLCJ0aXRsZSI6IlNhbGVzIE1hbmFnZXIiLCJhZGRyZXNzIjp7ImFkZHJlc3MiOiIyNjMgVGVudGggU3RyZWV0IiwiY2l0eSI6IlNhbiBGcmFuY2lzY28iLCJzdGF0ZSI6Ildpc2NvbnNpbiIsInN0YXRlQ29kZSI6IldJIiwicG9zdGFsQ29kZSI6IjM3NjU3IiwiY29vcmRpbmF0ZXMiOnsibGF0Ijo3MS44MTQ1MjUsImxuZyI6LTE2MS4xNTAyNjN9LCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyJ9fSwiZWluIjoiOTc3LTE3NSIsInNzbiI6IjkwMC01OTAtMjg5IiwidXNlckFnZW50IjoiTW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTVfNykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk2LjAuNDY2NC45MyBTYWZhcmkvNTM3LjM2IiwiY3J5cHRvIjp7ImNvaW4iOiJCaXRjb2luIiwid2FsbGV0IjoiMHhiOWZjMmZlNjNiMmE2YzAwM2YxYzMyNGMzYmZhNTMyNTkxNjIxODFhIiwibmV0d29yayI6IkV0aGVyZXVtIChFUkMyMCkifSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE2NjU3NDc5LCJleHAiOjE3MTY2NjEwMTl9.uKQQ-VzvFqAAlgUF6_QgcKHTfb27JJabAVcuQOzRSZI
@@ -61,7 +61,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROY
 * Must include Previous Auth Token in Authorization parameter in request header
 * Will reutrn new Auth token
 * New returned Auth Token will have expiry time of 59 minutes.
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 const url = 'http://localhost:8080/auth/refresh';
 const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJtYWlkZW5OYW1lIjoiU21pdGgiLCJhZ2UiOjI4LCJnZW5kZXIiOiJmZW1hbGUiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwicGhvbmUiOiIrODEgOTY1LTQzMS0zMDI0IiwidXNlcm5hbWUiOiJlbWlseXMiLCJwYXNzd29yZCI6ImVtaWx5c3Bhc3MiLCJiaXJ0aERhdGUiOiIxOTk2LTUtMzAiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJibG9vZEdyb3VwIjoiTy0iLCJoZWlnaHQiOjE5My4yNCwid2VpZ2h0Ijo2My4xNiwiZXllQ29sb3IiOiJHcm';
@@ -73,7 +73,7 @@ fetch(url , {
 })
 ```
 
-REST : 
+* REST : 
 ```
 POST http://localhost:8080/auth/refresh
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJtYWlkZW5OYW1lIjoiU21pdGgiLCJhZ2UiOjI4LCJnZW5kZXIiOiJmZW1hbGUiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwicGhvbmUiOiIrODEgOTY1LTQzMS0zMDI0IiwidXNlcm5hbWUiOiJlbWlseXMiLCJwYXNzd29yZCI6ImVtaWx5c3Bhc3MiLCJiaXJ0aERhdGUiOiIxOTk2LTUtMzAiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJibG9vZEdyb3VwIjoiTy0iLCJoZWlnaHQiOjE5My4yNCwid2VpZ2h0Ijo2My4xNiwiZXllQ29sb3IiOiJHcmVlbiIsImhhaXIiOnsiY29sb3IiOiJCcm93biIsInR5cGUiOiJDdXJseSJ9LCJpcCI6IjQyLjQ4LjEwMC4zMiIsImFkZHJlc3MiOnsiYWRkcmVzcyI6IjYyNiBNYWluIFN0cmVldCIsImNpdHkiOiJQaG9lbml4Iiwic3RhdGUiOiJNaXNzaXNzaXBwaSIsInN0YXRlQ29kZSI6Ik1TIiwicG9zdGFsQ29kZSI6IjI5MTEyIiwiY29vcmRpbmF0ZXMiOnsibGF0IjotNzcuMTYyMTMsImxuZyI6LTkyLjA4NDgyNH0sImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIn0sIm1hY0FkZHJlc3MiOiI0NzpmYTo0MToxODplYzplYiIsInVuaXZlcnNpdHkiOiJVbml2ZXJzaXR5IG9mIFdpc2NvbnNpbi0tTWFkaXNvbiIsImJhbmsiOnsiY2FyZEV4cGlyZSI6IjAzLzI2IiwiY2FyZE51bWJlciI6IjkyODk3NjA2NTU0ODE4MTUiLCJjYXJkVHlwZSI6IkVsbyIsImN1cnJlbmN5IjoiQ05ZIiwiaWJhbiI6IllQVVhJU09CSTdUVEhQSzJCUjNIQUlYTCJ9LCJjb21wYW55Ijp7ImRlcGFydG1lbnQiOiJFbmdpbmVlcmluZyIsIm5hbWUiOiJEb29sZXksIEtvemV5IGFuZCBDcm9uaW4iLCJ0aXRsZSI6IlNhbGVzIE1hbmFnZXIiLCJhZGRyZXNzIjp7ImFkZHJlc3MiOiIyNjMgVGVudGggU3RyZWV0IiwiY2l0eSI6IlNhbiBGcmFuY2lzY28iLCJzdGF0ZSI6Ildpc2NvbnNpbiIsInN0YXRlQ29kZSI6IldJIiwicG9zdGFsQ29kZSI6IjM3NjU3IiwiY29vcmRpbmF0ZXMiOnsibGF0Ijo3MS44MTQ1MjUsImxuZyI6LTE2MS4xNTAyNjN9LCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyJ9fSwiZWluIjoiOTc3LTE3NSIsInNzbiI6IjkwMC01OTAtMjg5IiwidXNlckFnZW50IjoiTW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTVfNykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk2LjAuNDY2NC45MyBTYWZhcmkvNTM3LjM2IiwiY3J5cHRvIjp7ImNvaW4iOiJCaXRjb2luIiwid2FsbGV0IjoiMHhiOWZjMmZlNjNiMmE2YzAwM2YxYzMyNGMzYmZhNTMyNTkxNjIxODFhIiwibmV0d29yayI6IkV0aGVyZXVtIChFUkMyMCkifSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE2NjU3NDc5LCJleHAiOjE3MTY2NjEwMTl9.uKQQ-VzvFqAAlgUF6_QgcKHTfb27JJabAVcuQOzRSZI
@@ -90,29 +90,29 @@ Javascrit(Fetch) :
 ```
 	fetch("http://localhost:8080/Carts/")
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Carts/
 ```
 
 ### - Single Cart
 * Will return one Cart requested by ID
-Javascript(Fetch) : 
+* Javascript(Fetch) : 
 ```
 	fetch("http://localhost:8080/Carts/c/1")
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Carts/c/1
 ```
 
 ### - Carts by User
 * Will return Carts for the user requested in UserID
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 	fetch("http://localhost:8080/Carts/user/23")
 ``` 
-REST : 
+* REST : 
 ```
 GET http://localhost:8080/Carts/user/23
 ```
@@ -120,7 +120,7 @@ GET http://localhost:8080/Carts/user/23
 ### - Add Cart
 * Must include all of mentioned parameters and parameters must be of same data type 
 * Parameters {total : "number", discountedTotal : "number", userId : "number", totalProducts : "number", totalQuantity : "number", products: "array"}
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 	fetch("http://localhost:8080/Carts/add",{
 		method: 'POST',
@@ -137,7 +137,7 @@ Javascript(Fetch) :
 		}) 
 	})
 ```
-REST :
+* REST :
 ```
 POST http://localhost:8080/Carts/add
 Content-Type: application/json
@@ -153,7 +153,7 @@ Content-Type: application/json
 ### - Update Cart
 * Must be one of the mentioned parameters. And must have same data type
 * Parameters {total : "number", discountedTotal : "number", userId : "number", totalProducts : "number", totalQuantity : "number", products: "array"}
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Carts/c/1',{
 	method: 'PUT',
@@ -165,7 +165,7 @@ fetch('http://localhost:8080/Carts/c/1',{
 	})
 })	
 ```
-REST :
+* REST :
 ```
 PUT http://localhost:8080/Carts/c/1
 Content-Type: application/json
@@ -176,11 +176,11 @@ Content-Type: application/json
 ```
 
 ### - Delete Cart
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch("http://localhost:8080/Carts/c/1",{method:'DELETE'})
 ```
-REST :
+* REST :
 ```
 DELETE  http://localhost:8080/Carts/c/1
 ```
@@ -192,33 +192,33 @@ DELETE  http://localhost:8080/Carts/c/1
 ### - All Comments
 * Will return first comment 20 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) : 
+* Javascript(Fetch) : 
 ```
 fetch('http://localhost:8080/comments');
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/comments
 ```
 
 ### - Single Comment
 * Will return one Comment requested by ID
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch("http://localhost:8080/comments/c/123")
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/comments/c/123
 ```
 
 ### - Comment by Post
 * Will return Comment for the Post requested in PostID
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch("http://localhost:8080/comments/post/40");
 ```
-REST : 
+* REST : 
 ```
 GET http://localhost:8080/comments/post/40
 ```
@@ -226,7 +226,7 @@ GET http://localhost:8080/comments/post/40
 ### - Add Comment
 * Must include all of mentioned parameters and parameters must be of same data type 
 * Parameters : { body : "string", postId : "number", likes : "number", user : { id : "number",  username: "string", fullName: "string" }
-Javascript(Fetch) : 
+* Javascript(Fetch) : 
 ```
 fetch("http://localhost:8080/comments/add",{
 	method:'POST',
@@ -245,7 +245,7 @@ fetch("http://localhost:8080/comments/add",{
 	})
 })
 ```
-REST :
+* REST :
 ```
 POST  http://localhost:8080/comments/add
 Content-Type: application/json
@@ -265,7 +265,7 @@ Content-Type: application/json
 ### - Update Comment
 * Must be one of the mentioned parameters. And must have same data type
 * Parameters { body : "string", postId : "number", likes : "number", user : { id : "number",  username: "string", fullName: "string" }
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch("http://localhost:8080/comments/c/40",{
 	method: 'PUT',
@@ -281,7 +281,7 @@ fetch("http://localhost:8080/comments/c/40",{
 	})
 })
 ```
-REST :
+* REST :
 ```
 PUT  http://localhost:8080/comments/c/40
 Content-Type: application/json
@@ -301,11 +301,11 @@ Content-Type: application/json
 ```
 
 ### - Delete Comment
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch("http://localhost:8080/comments/c/201",{method:'DELETE'});
 ```
-REST :
+* REST :
 ```
 DELETE   http://localhost:8080/comments/c/201
 ```
@@ -317,21 +317,21 @@ DELETE   http://localhost:8080/comments/c/201
 ### - All Posts
 * Will return first posts 20 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/posts')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/posts
 ```
 ### - Single Post
 * Will return one Post requested by ID
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 	fetch("http://localhost:8080/posts/p/1")
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/posts/p/1
 ```
@@ -339,13 +339,13 @@ GET http://localhost:8080/posts/p/1
 ### - Search Posts
 * Will return first posts 10 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/posts/search?' + new URLSearchParams({
     Search: 'it',
 }))
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/posts/search?Search=it
 ```
@@ -356,14 +356,14 @@ GET http://localhost:8080/posts/search?Search=it
 * By Default sorts in ascending way
 * By Default returns first 10
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch("http://localhost:8080/posts/sort?" + new URLSearchParams({
     sortby: 'id',
 	order : 'desc'
 }))
 ```
-REST : 
+* REST : 
 ```
 GET http://localhost:8080/posts/sort?sortby=id&order=desc
 ```
@@ -372,11 +372,11 @@ GET http://localhost:8080/posts/sort?sortby=id&order=desc
 * Will return Posts by the User requested in UserID
 * By default returns first 10
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch("http://localhost:8080/posts/user/112")
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/posts/user/112
 ```
@@ -404,7 +404,7 @@ fetch("http://localhost:8080/posts/add",{
 	})
 })
 ```
-REST :
+* REST :
 ```
 POST http://localhost:8080/posts/add
 Content-Type: application/json
@@ -425,7 +425,7 @@ Content-Type: application/json
 ### - Update post
 * Must be one of the mentioned parameters. And must have same data type
 * Parameters { title : "string", body : "string", views : "number", tags: "array", reactions : { likes : "number",  dislikes: "number" }}
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch("http://localhost:8080/posts/p/112",{
 	method: 'PUT',
@@ -441,7 +441,7 @@ fetch("http://localhost:8080/posts/p/112",{
 	}
 })
  ```
-REST :
+* REST :
 ```
 PUT  http://localhost:8080/posts/p/112
 Content-Type: application/json
@@ -456,11 +456,11 @@ Content-Type: application/json
 ```
 
 ### - Delete Post
-Javascript(Fetch) :
+* * Javascript(Fetch) :
 ```
 fetch("http://localhost:8080/posts/p/201",{method:'DELETE'})
 ```
-REST :
+* REST :
 ```
 DELETE http://localhost:8080/posts/p/201
 ```
@@ -472,22 +472,22 @@ DELETE http://localhost:8080/posts/p/201
 ### - All Product
 * Will return first Products 20 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Products')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Products
 ```
 
 ### - Single Product
 * Will return one Product requested by ID
-Javascript(Fetch) : 
+* Javascript(Fetch) : 
 ```
 fetch('http://localhost:8080/Products/p/5')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Products/p/5
 ```
@@ -495,24 +495,24 @@ GET http://localhost:8080/Products/p/5
 ### - Search Products
 * Will return first Products 5 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+*  Javascript(Fetch) :
 ```
 const url = new URL('http://localhost:8080/Products/search');
 const params = { Search: 'E' };
 url.search = new URLSearchParams(params).toString();
 fetch(url)
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Products/search?Search=E
 ```
 ### - Product Categories
 * Will return all Procuct Categories
-Javascript(Fetch) : 
+* Javascript(Fetch) : 
 ```
 fetch('http://localhost:8080/Products/Categories')
 ```
-REST :
+* REST :
 ```
 	GET http://localhost:8080/Products/Categories
 ```
@@ -520,11 +520,11 @@ REST :
 ### - Products By Category
 * Will return all Procucts by Categories
 * Accepts both limit and skip. By default returns first 20
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Products/Category/smartphones')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Products/Category/smartphones
 ```
@@ -532,7 +532,7 @@ GET http://localhost:8080/Products/Category/smartphones
 ### - Add Product
 * Must include all of mentioned parameters and parameters must be of same data type 
 * Parameters {"title" : "string",	"description" : "string" , "price" : "number" , "discountPercentage" : "number" ,"rating" : "number" , "stock" : "number" , "brand" : "string" , "category" : "string" ,"thumbnail" : "string" , "images" : "array"}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Products/add', {
   method: 'POST',
@@ -553,7 +553,7 @@ fetch('http://localhost:8080/Products/add', {
   })
 })
 ``` 
-REST : 
+* REST : 
 ```
 POST  http://localhost:8080/Products/add
 Content-Type: application/json
@@ -586,7 +586,7 @@ fetch('http://localhost:8080/Products/p/5', {
   })
 })
 ```
-REST :
+* REST :
 ```
 PUT http://localhost:8080/Products/p/5
 Content-Type: application/json
@@ -596,11 +596,11 @@ Content-Type: application/json
 }
 ```
 ### - Delete Product
-Javascript(Fetch) : 
+* Javascript(Fetch) : 
 ```
 fetch('http://localhost:8080/Products/Product/206', {method: 'DELETE',})
 ```
-REST :
+* REST :
 ```
 DELETE  http://localhost:8080/Products/Product/206
 ```
@@ -612,32 +612,32 @@ DELETE  http://localhost:8080/Products/Product/206
 ### - All Quotes
 * Will return first Quotes 20 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Quotes')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Quotes
 ```
 
 ### - Single Quote
 * Will return one Quote requested by ID
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Quotes/q/6')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Quotes/q/6
 ```
 ### - Random Quote
 * Will return random Quote
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch("http://localhost:8080/Quotes/random")
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Quotes/random
 ```
@@ -649,33 +649,33 @@ GET http://localhost:8080/Quotes/random
 ### - All Recipes
 * Will return first Recipes 20 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Recipes')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Recipes
 ```
 
 ### - Single Recipe
 * Will return one Recipe requested by ID
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Recipes/r/123')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Recipes/r/123
 ```
 ### - Search Recipes
 * Will return first 10 Recipes by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Recipes/search?Search=Eth')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Recipes/search?Search=Eth
 ```
@@ -687,33 +687,33 @@ GET http://localhost:8080/Recipes/search?Search=Eth
 ### - All Todos
 * Will return first Todos 20 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/todos')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/todos
 ```
 
 ### - Single Todo
 * Will return one todo requested by ID
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/todos/t/2')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/todos/t/2
 ```
 
 ### - Random Todo
 * Will return random Todo
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/todos/random')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/todos/random
 ```
@@ -722,11 +722,11 @@ GET http://localhost:8080/todos/random
 * Will return todo by the User requested in UserID
 * By default returns first 10
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/todos/user/1')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/todos/user/1
 ```
@@ -734,7 +734,7 @@ GET http://localhost:8080/todos/user/1
 ### - Add Todo
 * Must include all of mentioned parameters and parameters must be of same data type 
 * Parameters { todo: "string", userId: "number" }
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/todos/add', {
   method: 'POST',
@@ -747,7 +747,7 @@ fetch('http://localhost:8080/todos/add', {
   })
 })
 ```
-Rest :
+* REST :
 ```
 POST  http://localhost:8080/todos/add
 Content-Type: application/json
@@ -761,7 +761,7 @@ Content-Type: application/json
 ### - Update Todo
 * Must be one of the mentioned parameters. And must have same data type
 * Parameters { todo: "string", userId: "number" }
-Javascript(Fetch) : 
+* Javascript(Fetch) : 
 ```
 fetch('http://localhost:8080/todos/t/2', {
   method: 'PUT',
@@ -773,7 +773,7 @@ fetch('http://localhost:8080/todos/t/2', {
   })
 })
 ``` 
-REST :
+* REST :
 ```
 PUT  http://localhost:8080/todos/t/2
 Content-Type: application/json
@@ -787,7 +787,7 @@ Javscript(Fetch) :
 ```
 fetch("http://localhost:8080/todos/t/201",{method:'DELETE'})
 ```
-REST :
+* REST :
 ```
 DELETE   http://localhost:8080/todos/t/201
 ```
@@ -799,21 +799,21 @@ DELETE   http://localhost:8080/todos/t/201
 ### - All User
 * Will return first Users 20 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Users')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Users
 ```
 ### - Single User
 * Will return one User requested by ID
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Users/user/5')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Users/user/5
 ```
@@ -821,11 +821,11 @@ GET http://localhost:8080/Users/user/5
 ### - Search Users
 * Will return first Users 5 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Users/search?Search=Emily Smith Johnson')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Users/search?Search=Emily Smith Johnson
 ```
@@ -834,7 +834,7 @@ GET http://localhost:8080/Users/search?Search=Emily Smith Johnson
 * Can be Single property or could be nested properties seperated by "." in key 
 * Will Return filtered Users by provided property or nested property's value
 * Accepts Both limit and skip in query example {?limit=2&skip=1} 
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Users/filter?key=hair.color&value=Red')
 ```
@@ -849,18 +849,18 @@ GET http://localhost:8080/Users/filter?key=hair.color&value=Red
 * By Default sorts in ascending way
 * By Default returns first 10
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Users/sort?sortby=firstName&order=desc&limit=2&skip=1')
 ```
-REST :
+* REST :
 ```
 GET http://localhost:8080/Users/sort?sortby=firstName&order=desc&limit=2&skip=1
 ```
 
 ### - Add User
 * Some Fields will be added by default for future sorting or other actions
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Users/add', {
   method: 'POST',
@@ -874,7 +874,7 @@ fetch('http://localhost:8080/Users/add', {
 })
 
 ```  
-REST :
+* REST :
 ```
 POST  http://localhost:8080/Users/add
 Content-Type: application/json
@@ -890,7 +890,7 @@ Content-Type: application/json
 * Must be one of the mentioned default parameters or the parameter that is manually added in add User. And must have same data type
 * Must match Data type already provided
 * { firstName: "", lastName: "", maidenName: "", age: 18,gender: "", email: "",phone: "",username: "",password: "",birthDate: "",image: "",bloodGroup: "",height: 0,weight: 0,eyeColor: "",hair: {  color: "",  type: ""},ip: "",address: {  address: "",  city: "",  state: "",  stateCode: "",  postalCode: "",  coordinates:    lat: 0,    lng: 0  },  country: ""},macAddress: "",university: "",bank: {  cardExpire: "",  cardNumber: "",  cardType: "",  currency: "",  iban: ""},company: {  department: "",  name: "",  title: "",  address: {    address: "",    city: "",    stateCode: "",    state: "",    postalCode: "",    coordinates: {      lat: 0,      lng: 0    },    country: ""  }},ein: "",ssn: "",userAgent: "",crypto: {  coin: "",  wallet: "",  network: ""},role: ""}
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Users/user/5', {
   method: 'PUT',
@@ -903,7 +903,7 @@ fetch('http://localhost:8080/Users/user/5', {
 })
 
 ```
-REST :
+* REST :
 ```
 PUT http://localhost:8080/Users/user/5
 Content-Type: application/json
@@ -913,11 +913,11 @@ Content-Type: application/json
 }
 ```
 ### - Delete User
-Javascript(Fetch) :
+* Javascript(Fetch) :
 ```
 fetch('http://localhost:8080/Users/user/206')
 ```
-REST :
+* REST :
 ```
 DELETE  http://localhost:8080/Users/user/206
 ```
