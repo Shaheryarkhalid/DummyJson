@@ -1,4 +1,4 @@
-#       													 All API End Points
+# All API End Points
 
 ## Auth 
 * Modules : User Login, Current Authenticated User, Refresh Auth Token
@@ -99,7 +99,7 @@ DELETE  http://localhost:8080/Carts/c/1
 * Modules : All Comments, Single Comment, Comment by Post, Add Comment, Update Comment, Delete Comment
 * URL : /comments/
 
-### All Comments
+### - All Comments
 * Will return first comment 20 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 
@@ -107,21 +107,21 @@ DELETE  http://localhost:8080/Carts/c/1
 GET http://localhost:8080/comments
 ```
 
-### Single Comment
+### - Single Comment
 * Will return one Comment requested by ID
 
 ```
 GET http://localhost:8080/comments/c/123
 ```
 
-### Comment by Post
+### - Comment by Post
 * Will return Comment for the Post requested in PostID
 
 ```
 GET http://localhost:8080/comments/post/40
 ```
 
-### Add Comment
+### - Add Comment
 * Must include all of mentioned parameters and parameters must be of same data type 
 * Parameters : { body : "string", postId : "number", likes : "number", user : { id : "number",  username: "string", fullName: "string" }
 ```
@@ -140,7 +140,7 @@ Content-Type: application/json
 }
 ```
 
-### Update Comment
+### - Update Comment
 * Must be one of the mentioned parameters. And must have same data type
 * Parameters { body : "string", postId : "number", likes : "number", user : { id : "number",  username: "string", fullName: "string" }
 ```
@@ -156,7 +156,7 @@ Content-Type: application/json
 }
 ```
 
-### Delete Comment
+### - Delete Comment
 ```
 DELETE   http://localhost:8080/comments/c/201
 ```
@@ -165,26 +165,26 @@ DELETE   http://localhost:8080/comments/c/201
 * Modules : All Posts, Single Post, Search Posts, Sort Posts, Post By User, Add Post, Update post, Delete Post
 * URL : /posts/
 
-### All Posts
+### - All Posts
 * Will return first posts 20 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 ```
 GET http://localhost:8080/posts
 ```
-### Single Post
+### - Single Post
 * Will return one Post requested by ID
 ```
 GET http://localhost:8080/posts/p/1
 ```
 
-### Search Posts
+### - Search Posts
 * Will return first posts 10 by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 ```
 GET http://localhost:8080/posts/search?Search=it
 ```
 
-### Sort Posts
+### - Sort Posts
 * Sort by Property must be type of either string or number
 * Will sort by the provided property. Also accepts order whether ascending or descending
 * By Default sorts in ascending way
@@ -194,7 +194,7 @@ GET http://localhost:8080/posts/search?Search=it
 GET http://localhost:8080/posts/sort?sortby=id&order=desc
 ```
 
-### Post By User
+### - Post By User
 * Will return Posts by the User requested in UserID
 * By default returns first 10
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
@@ -202,7 +202,7 @@ GET http://localhost:8080/posts/sort?sortby=id&order=desc
 GET http://localhost:8080/posts/user/112
 ```
 
-### Add Post
+### - Add Post
 * Must include all of mentioned parameters and parameters must be of same data type 
 * Parameters { title : "string", body : "string", views : "number", tags: "array", reactions : { likes : "number",  dislikes: "number" }}
 
@@ -223,7 +223,7 @@ Content-Type: application/json
 }
 ```
 
-### Update post
+### - Update post
 * Must be one of the mentioned parameters. And must have same data type
 * Parameters { title : "string", body : "string", views : "number", tags: "array", reactions : { likes : "number",  dislikes: "number" }}
 ```
@@ -239,7 +239,7 @@ Content-Type: application/json
 }
 ```
 
-### Delete Post
+### - Delete Post
 ```
 DELETE http://localhost:8080/posts/p/201
 ```
