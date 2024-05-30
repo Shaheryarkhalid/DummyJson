@@ -1,4 +1,4 @@
-# All API End Points
+#       													 All API End Points
 
 ## Auth 
 * Modules : User Login, Current Authenticated User, Refresh Auth Token
