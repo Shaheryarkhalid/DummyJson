@@ -39,7 +39,8 @@ Content-Type : application/json
 ```
 ### - Current Authenticated User
 * Authorization parameter in request must include Bearer followed by Authorization Token 
-* Athorization token  will Provided as a return value from login(if Successful) or Refresh Token 
+* Athorization token  will Provided as a return value from login(if Successful) or Refresh Token.
+
 Javasctipt(Fetch):
 ```
 const url = 'http://localhost:8080/auth/me';
