@@ -3,13 +3,13 @@
 ## Auth  
 
 ### User Login 
-*Parameters must include Email and Password 
+* Parameters must include Email and Password 
 
-*Will compare provided values with user values in User.json in Data Folder
+* Will compare provided values with user values in User.json in Data Folder
 
-*Will return Authorization Token
+* Will return Authorization Token
 
-*Auth Token will have expiry time of 59 minutes.
+* Auth Token will have expiry time of 59 minutes.
 
 ```
 POST http://localhost:8080/auth/login
