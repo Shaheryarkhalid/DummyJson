@@ -19,6 +19,29 @@ Key features of MockMate API Suite include:
 
 MockMate API Suite is designed to be flexible and easy to use, making it an essential tool for developers looking to streamline their API testing and development process within the GitHub environment.
 With its intuitive RESTful endpoints, you can easily integrate it into your projects. Plus, you can run it locally for seamless testing and development
+# Dependencies
+* [NODE.js](https://nodejs.org/) 
+* [Express](https://expressjs.com/) 
+* NPM
+# Local Setup
+* Clone Project Locally. 
+* Run below command to install all dependencies.
+```
+npm install
+```
+* Run below Command to run the project
+```
+npm run dev
+```
+OR
+```
+npm start
+```
+* You can Access Project at 
+```
+http://localhost:8080/
+```
+ONLY if Running Locally > (change all of the {} with {http://localhost:8080} to access Locally ) 
 
 # All API End Points
 * Auth, Users, Products, Carts, Posts, Comments, Quotes, Recipes, Todos  
