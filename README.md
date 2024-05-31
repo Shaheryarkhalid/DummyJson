@@ -22,6 +22,7 @@ With its intuitive RESTful endpoints, you can easily integrate it into your proj
 # Dependencies
 * [NODE.js](https://nodejs.org/) 
 * [Express](https://expressjs.com/) 
+* JWT(JSON Web Tokens) 
 * NPM
 # Local Setup
 * Clone Project Locally. 
