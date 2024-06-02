@@ -40,9 +40,9 @@ npm start
 ```
 * You can Access Project at 
 ```
-http://localhost:8080/
+https://mockmate.netlify.app/
 ```
-ONLY if Running Locally > (change all of the {} with {http://localhost:8080} to access Locally ) 
+ONLY if Running Locally > (change all of the {https://mockmate.netlify.app/} with {http://localhost:8080/} to access Locally ) 
 
 # All API End Points
 * Auth, Users, Products, Carts, Posts, Comments, Quotes, Recipes, Todos  
@@ -61,7 +61,7 @@ ONLY if Running Locally > (change all of the {} with {http://localhost:8080} to 
 * Auth Token will have expiry time of 59 minutes.
 - Javascript (Fetch):
 ```
-fetch('http://localhost:8080/auth/login', {
+fetch('https://mockmate.netlify.app/auth/login', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ fetch('http://localhost:8080/auth/login', {
 
 - REST:
 ```
-POST http://localhost:8080/auth/login
+POST https://mockmate.netlify.app/auth/login
 Content-Type : application/json
 
 {
@@ -89,7 +89,7 @@ Content-Type : application/json
 
 - Javasctipt(Fetch):
 ```
-const url = 'http://localhost:8080/auth/me';
+const url = 'https://mockmate.netlify.app/auth/me';
 const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJtYWlkZW5OYW1lIjoiU21pdGgiLCJhZ2UiOjI4LCJnZW5kZXIiOiJmZW1hbGUiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwicGhvbmUiOiIrODEgOTY1LTQzMS0zMDI0IiwidXNlcm5hbWUiOiJlbWlseXMiLCJwYXNzd29yZCI6ImVtaWx5c3Bhc3MiLCJiaXJ0aERhdGUiOiIxOTk2LTUtMzAiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJibG9vZEdyb3VwIjoiTy0iLCJoZWlnaHQiOjE5My4yNCwid2VpZ2h0Ijo2My4xNiwiZXllQ29sb3IiOiJHcm';
 fetch(url , {
   method: 'GET',
@@ -100,7 +100,7 @@ fetch(url , {
 ```
 - REST : 
 ```
-GET http://localhost:8080/auth/me
+GET https://mockmate.netlify.app/auth/me
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJtYWlkZW5OYW1lIjoiU21pdGgiLCJhZ2UiOjI4LCJnZW5kZXIiOiJmZW1hbGUiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwicGhvbmUiOiIrODEgOTY1LTQzMS0zMDI0IiwidXNlcm5hbWUiOiJlbWlseXMiLCJwYXNzd29yZCI6ImVtaWx5c3Bhc3MiLCJiaXJ0aERhdGUiOiIxOTk2LTUtMzAiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJibG9vZEdyb3VwIjoiTy0iLCJoZWlnaHQiOjE5My4yNCwid2VpZ2h0Ijo2My4xNiwiZXllQ29sb3IiOiJHcmVlbiIsImhhaXIiOnsiY29sb3IiOiJCcm93biIsInR5cGUiOiJDdXJseSJ9LCJpcCI6IjQyLjQ4LjEwMC4zMiIsImFkZHJlc3MiOnsiYWRkcmVzcyI6IjYyNiBNYWluIFN0cmVldCIsImNpdHkiOiJQaG9lbml4Iiwic3RhdGUiOiJNaXNzaXNzaXBwaSIsInN0YXRlQ29kZSI6Ik1TIiwicG9zdGFsQ29kZSI6IjI5MTEyIiwiY29vcmRpbmF0ZXMiOnsibGF0IjotNzcuMTYyMTMsImxuZyI6LTkyLjA4NDgyNH0sImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIn0sIm1hY0FkZHJlc3MiOiI0NzpmYTo0MToxODplYzplYiIsInVuaXZlcnNpdHkiOiJVbml2ZXJzaXR5IG9mIFdpc2NvbnNpbi0tTWFkaXNvbiIsImJhbmsiOnsiY2FyZEV4cGlyZSI6IjAzLzI2IiwiY2FyZE51bWJlciI6IjkyODk3NjA2NTU0ODE4MTUiLCJjYXJkVHlwZSI6IkVsbyIsImN1cnJlbmN5IjoiQ05ZIiwiaWJhbiI6IllQVVhJU09CSTdUVEhQSzJCUjNIQUlYTCJ9LCJjb21wYW55Ijp7ImRlcGFydG1lbnQiOiJFbmdpbmVlcmluZyIsIm5hbWUiOiJEb29sZXksIEtvemV5IGFuZCBDcm9uaW4iLCJ0aXRsZSI6IlNhbGVzIE1hbmFnZXIiLCJhZGRyZXNzIjp7ImFkZHJlc3MiOiIyNjMgVGVudGggU3RyZWV0IiwiY2l0eSI6IlNhbiBGcmFuY2lzY28iLCJzdGF0ZSI6Ildpc2NvbnNpbiIsInN0YXRlQ29kZSI6IldJIiwicG9zdGFsQ29kZSI6IjM3NjU3IiwiY29vcmRpbmF0ZXMiOnsibGF0Ijo3MS44MTQ1MjUsImxuZyI6LTE2MS4xNTAyNjN9LCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyJ9fSwiZWluIjoiOTc3LTE3NSIsInNzbiI6IjkwMC01OTAtMjg5IiwidXNlckFnZW50IjoiTW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTVfNykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk2LjAuNDY2NC45MyBTYWZhcmkvNTM3LjM2IiwiY3J5cHRvIjp7ImNvaW4iOiJCaXRjb2luIiwid2FsbGV0IjoiMHhiOWZjMmZlNjNiMmE2YzAwM2YxYzMyNGMzYmZhNTMyNTkxNjIxODFhIiwibmV0d29yayI6IkV0aGVyZXVtIChFUkMyMCkifSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE2NjU3NDc5LCJleHAiOjE3MTY2NjEwMTl9.uKQQ-VzvFqAAlgUF6_QgcKHTfb27JJabAVcuQOzRSZI
 ```
 ### - Refresh Auth Token
@@ -109,7 +109,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROY
 * New returned Auth Token will have expiry time of 59 minutes.
 - Javascript(Fetch) :
 ```
-const url = 'http://localhost:8080/auth/refresh';
+const url = 'https://mockmate.netlify.app/auth/refresh';
 const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJtYWlkZW5OYW1lIjoiU21pdGgiLCJhZ2UiOjI4LCJnZW5kZXIiOiJmZW1hbGUiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwicGhvbmUiOiIrODEgOTY1LTQzMS0zMDI0IiwidXNlcm5hbWUiOiJlbWlseXMiLCJwYXNzd29yZCI6ImVtaWx5c3Bhc3MiLCJiaXJ0aERhdGUiOiIxOTk2LTUtMzAiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJibG9vZEdyb3VwIjoiTy0iLCJoZWlnaHQiOjE5My4yNCwid2VpZ2h0Ijo2My4xNiwiZXllQ29sb3IiOiJHcm';
 fetch(url , {
   method: 'POST',
@@ -121,7 +121,7 @@ fetch(url , {
 
 - REST : 
 ```
-POST http://localhost:8080/auth/refresh
+POST https://mockmate.netlify.app/auth/refresh
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJtYWlkZW5OYW1lIjoiU21pdGgiLCJhZ2UiOjI4LCJnZW5kZXIiOiJmZW1hbGUiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwicGhvbmUiOiIrODEgOTY1LTQzMS0zMDI0IiwidXNlcm5hbWUiOiJlbWlseXMiLCJwYXNzd29yZCI6ImVtaWx5c3Bhc3MiLCJiaXJ0aERhdGUiOiIxOTk2LTUtMzAiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJibG9vZEdyb3VwIjoiTy0iLCJoZWlnaHQiOjE5My4yNCwid2VpZ2h0Ijo2My4xNiwiZXllQ29sb3IiOiJHcmVlbiIsImhhaXIiOnsiY29sb3IiOiJCcm93biIsInR5cGUiOiJDdXJseSJ9LCJpcCI6IjQyLjQ4LjEwMC4zMiIsImFkZHJlc3MiOnsiYWRkcmVzcyI6IjYyNiBNYWluIFN0cmVldCIsImNpdHkiOiJQaG9lbml4Iiwic3RhdGUiOiJNaXNzaXNzaXBwaSIsInN0YXRlQ29kZSI6Ik1TIiwicG9zdGFsQ29kZSI6IjI5MTEyIiwiY29vcmRpbmF0ZXMiOnsibGF0IjotNzcuMTYyMTMsImxuZyI6LTkyLjA4NDgyNH0sImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIn0sIm1hY0FkZHJlc3MiOiI0NzpmYTo0MToxODplYzplYiIsInVuaXZlcnNpdHkiOiJVbml2ZXJzaXR5IG9mIFdpc2NvbnNpbi0tTWFkaXNvbiIsImJhbmsiOnsiY2FyZEV4cGlyZSI6IjAzLzI2IiwiY2FyZE51bWJlciI6IjkyODk3NjA2NTU0ODE4MTUiLCJjYXJkVHlwZSI6IkVsbyIsImN1cnJlbmN5IjoiQ05ZIiwiaWJhbiI6IllQVVhJU09CSTdUVEhQSzJCUjNIQUlYTCJ9LCJjb21wYW55Ijp7ImRlcGFydG1lbnQiOiJFbmdpbmVlcmluZyIsIm5hbWUiOiJEb29sZXksIEtvemV5IGFuZCBDcm9uaW4iLCJ0aXRsZSI6IlNhbGVzIE1hbmFnZXIiLCJhZGRyZXNzIjp7ImFkZHJlc3MiOiIyNjMgVGVudGggU3RyZWV0IiwiY2l0eSI6IlNhbiBGcmFuY2lzY28iLCJzdGF0ZSI6Ildpc2NvbnNpbiIsInN0YXRlQ29kZSI6IldJIiwicG9zdGFsQ29kZSI6IjM3NjU3IiwiY29vcmRpbmF0ZXMiOnsibGF0Ijo3MS44MTQ1MjUsImxuZyI6LTE2MS4xNTAyNjN9LCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyJ9fSwiZWluIjoiOTc3LTE3NSIsInNzbiI6IjkwMC01OTAtMjg5IiwidXNlckFnZW50IjoiTW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTVfNykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk2LjAuNDY2NC45MyBTYWZhcmkvNTM3LjM2IiwiY3J5cHRvIjp7ImNvaW4iOiJCaXRjb2luIiwid2FsbGV0IjoiMHhiOWZjMmZlNjNiMmE2YzAwM2YxYzMyNGMzYmZhNTMyNTkxNjIxODFhIiwibmV0d29yayI6IkV0aGVyZXVtIChFUkMyMCkifSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE2NjU3NDc5LCJleHAiOjE3MTY2NjEwMTl9.uKQQ-VzvFqAAlgUF6_QgcKHTfb27JJabAVcuQOzRSZI
 ```
 
@@ -134,33 +134,33 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROY
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 Javascrit(Fetch) : 
 ```
-fetch("http://localhost:8080/Carts/")
+fetch("https://mockmate.netlify.app/Carts/")
 ```
 - REST : 
 ```
-GET http://localhost:8080/Carts/
+GET https://mockmate.netlify.app/Carts/
 ```
 
 ### - Single Cart
 * Will return one Cart requested by ID
 - Javascript(Fetch) : 
 ```
-fetch("http://localhost:8080/Carts/c/1")
+fetch("https://mockmate.netlify.app/Carts/c/1")
 ```
 - REST : 
 ```
-GET http://localhost:8080/Carts/c/1
+GET https://mockmate.netlify.app/Carts/c/1
 ```
 
 ### - Carts by User
 * Will return Carts for the user requested in UserID
 - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/Carts/user/23")
+fetch("https://mockmate.netlify.app/Carts/user/23")
 ``` 
 - REST : 
 ```
-GET http://localhost:8080/Carts/user/23
+GET https://mockmate.netlify.app/Carts/user/23
 ```
 
 ### - Add Cart
@@ -168,7 +168,7 @@ GET http://localhost:8080/Carts/user/23
 * Parameters {total : "number", discountedTotal : "number", userId : "number", totalProducts : "number", totalQuantity : "number", products: "array"}
 * - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/Carts/add",{
+fetch("https://mockmate.netlify.app/Carts/add",{
 	method: 'POST',
 	headers : {
 		'Content-Type' : 'application/json'
@@ -185,7 +185,7 @@ fetch("http://localhost:8080/Carts/add",{
 ```
 - REST : 
 ```
-POST http://localhost:8080/Carts/add
+POST https://mockmate.netlify.app/Carts/add
 Content-Type: application/json
 {
 	"total" : 0, 
@@ -201,7 +201,7 @@ Content-Type: application/json
 * Parameters {total : "number", discountedTotal : "number", userId : "number", totalProducts : "number", totalQuantity : "number", products: "array"}
 * - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Carts/c/1',{
+fetch('https://mockmate.netlify.app/Carts/c/1',{
 	method: 'PUT',
 	headers: {
 		'Content-Type': 'application/json'
@@ -213,7 +213,7 @@ fetch('http://localhost:8080/Carts/c/1',{
 ```
 - REST : 
 ```
-PUT http://localhost:8080/Carts/c/1
+PUT https://mockmate.netlify.app/Carts/c/1
 Content-Type: application/json
 
 {
@@ -224,11 +224,11 @@ Content-Type: application/json
 ### - Delete Cart
 * - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/Carts/c/1",{method:'DELETE'})
+fetch("https://mockmate.netlify.app/Carts/c/1",{method:'DELETE'})
 ```
 - REST : 
 ```
-DELETE  http://localhost:8080/Carts/c/1
+DELETE  https://mockmate.netlify.app/Carts/c/1
 ```
 
 ## Comments
@@ -240,33 +240,33 @@ DELETE  http://localhost:8080/Carts/c/1
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 - Javascript(Fetch) : 
 ```
-fetch('http://localhost:8080/comments');
+fetch('https://mockmate.netlify.app/comments');
 ```
 - REST : 
 ```
-GET http://localhost:8080/comments
+GET https://mockmate.netlify.app/comments
 ```
 
 ### - Single Comment
 * Will return one Comment requested by ID
 * - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/comments/c/123")
+fetch("https://mockmate.netlify.app/comments/c/123")
 ```
 - REST : 
 ```
-GET http://localhost:8080/comments/c/123
+GET https://mockmate.netlify.app/comments/c/123
 ```
 
 ### - Comment by Post
 * Will return Comment for the Post requested in PostID
 * - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/comments/post/40");
+fetch("https://mockmate.netlify.app/comments/post/40");
 ```
 - REST : 
 ```
-GET http://localhost:8080/comments/post/40
+GET https://mockmate.netlify.app/comments/post/40
 ```
 
 ### - Add Comment
@@ -274,7 +274,7 @@ GET http://localhost:8080/comments/post/40
 * Parameters : { body : "string", postId : "number", likes : "number", user : { id : "number",  username: "string", fullName: "string" }
 - Javascript(Fetch) : 
 ```
-fetch("http://localhost:8080/comments/add",{
+fetch("https://mockmate.netlify.app/comments/add",{
 	method:'POST',
 	headers: {
 		'Content-Type': 'application/json'
@@ -293,7 +293,7 @@ fetch("http://localhost:8080/comments/add",{
 ```
 - REST : 
 ```
-POST  http://localhost:8080/comments/add
+POST  https://mockmate.netlify.app/comments/add
 Content-Type: application/json
 
 {
@@ -313,7 +313,7 @@ Content-Type: application/json
 * Parameters { body : "string", postId : "number", likes : "number", user : { id : "number",  username: "string", fullName: "string" }
 * - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/comments/c/40",{
+fetch("https://mockmate.netlify.app/comments/c/40",{
 	method: 'PUT',
 	headers: {
 		'Content-Type': 'application/json'
@@ -329,7 +329,7 @@ fetch("http://localhost:8080/comments/c/40",{
 ```
 - REST : 
 ```
-PUT  http://localhost:8080/comments/c/40
+PUT  https://mockmate.netlify.app/comments/c/40
 Content-Type: application/json
 
 {
@@ -349,11 +349,11 @@ Content-Type: application/json
 ### - Delete Comment
 * - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/comments/c/201",{method:'DELETE'});
+fetch("https://mockmate.netlify.app/comments/c/201",{method:'DELETE'});
 ```
 - REST : 
 ```
-DELETE   http://localhost:8080/comments/c/201
+DELETE   https://mockmate.netlify.app/comments/c/201
 ```
 
 ## Posts
@@ -365,21 +365,21 @@ DELETE   http://localhost:8080/comments/c/201
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 * - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/posts')
+fetch('https://mockmate.netlify.app/posts')
 ```
 - REST : 
 ```
-GET http://localhost:8080/posts
+GET https://mockmate.netlify.app/posts
 ```
 ### - Single Post
 * Will return one Post requested by ID
 * - Javascript(Fetch) :
 ```
-	fetch("http://localhost:8080/posts/p/1")
+	fetch("https://mockmate.netlify.app/posts/p/1")
 ```
 - REST : 
 ```
-GET http://localhost:8080/posts/p/1
+GET https://mockmate.netlify.app/posts/p/1
 ```
 
 ### - Search Posts
@@ -387,13 +387,13 @@ GET http://localhost:8080/posts/p/1
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 * - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/posts/search?' + new URLSearchParams({
+fetch('https://mockmate.netlify.app/posts/search?' + new URLSearchParams({
     Search: 'it',
 }))
 ```
 - REST : 
 ```
-GET http://localhost:8080/posts/search?Search=it
+GET https://mockmate.netlify.app/posts/search?Search=it
 ```
 
 ### - Sort Posts
@@ -404,14 +404,14 @@ GET http://localhost:8080/posts/search?Search=it
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 * - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/posts/sort?" + new URLSearchParams({
+fetch("https://mockmate.netlify.app/posts/sort?" + new URLSearchParams({
     sortby: 'id',
 	order : 'desc'
 }))
 ```
 - REST : 
 ```
-GET http://localhost:8080/posts/sort?sortby=id&order=desc
+GET https://mockmate.netlify.app/posts/sort?sortby=id&order=desc
 ```
 
 ### - Post By User
@@ -420,11 +420,11 @@ GET http://localhost:8080/posts/sort?sortby=id&order=desc
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 * - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/posts/user/112")
+fetch("https://mockmate.netlify.app/posts/user/112")
 ```
 - REST : 
 ```
-GET http://localhost:8080/posts/user/112
+GET https://mockmate.netlify.app/posts/user/112
 ```
 
 ### - Add Post
@@ -432,7 +432,7 @@ GET http://localhost:8080/posts/user/112
 * Parameters { title : "string", body : "string", views : "number", tags: "array", reactions : { likes : "number",  dislikes: "number" }}
 Javascript(Fetch):
 ```
-fetch("http://localhost:8080/posts/add",{
+fetch("https://mockmate.netlify.app/posts/add",{
 	method: 'POST',
 	headers: {
 	'Content-Type': 'application/json'
@@ -452,7 +452,7 @@ fetch("http://localhost:8080/posts/add",{
 ```
 - REST : 
 ```
-POST http://localhost:8080/posts/add
+POST https://mockmate.netlify.app/posts/add
 Content-Type: application/json
 
 {
@@ -473,7 +473,7 @@ Content-Type: application/json
 * Parameters { title : "string", body : "string", views : "number", tags: "array", reactions : { likes : "number",  dislikes: "number" }}
 * - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/posts/p/112",{
+fetch("https://mockmate.netlify.app/posts/p/112",{
 	method: 'PUT',
 	headers:{
 		'Content-Type': 'application/json'
@@ -489,7 +489,7 @@ fetch("http://localhost:8080/posts/p/112",{
  ```
 - REST : 
 ```
-PUT  http://localhost:8080/posts/p/112
+PUT  https://mockmate.netlify.app/posts/p/112
 Content-Type: application/json
 
 {
@@ -504,11 +504,11 @@ Content-Type: application/json
 ### - Delete Post
 * - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/posts/p/201",{method:'DELETE'})
+fetch("https://mockmate.netlify.app/posts/p/201",{method:'DELETE'})
 ```
 - REST : 
 ```
-DELETE http://localhost:8080/posts/p/201
+DELETE https://mockmate.netlify.app/posts/p/201
 ```
 
 ## Products
@@ -520,22 +520,22 @@ DELETE http://localhost:8080/posts/p/201
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Products')
+fetch('https://mockmate.netlify.app/Products')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Products
+GET https://mockmate.netlify.app/Products
 ```
 
 ### - Single Product
 * Will return one Product requested by ID
 - Javascript(Fetch) : 
 ```
-fetch('http://localhost:8080/Products/p/5')
+fetch('https://mockmate.netlify.app/Products/p/5')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Products/p/5
+GET https://mockmate.netlify.app/Products/p/5
 ```
 
 ### - Search Products
@@ -543,24 +543,24 @@ GET http://localhost:8080/Products/p/5
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 *  Javascript(Fetch) :
 ```
-const url = new URL('http://localhost:8080/Products/search');
+const url = new URL('https://mockmate.netlify.app/Products/search');
 const params = { Search: 'E' };
 url.search = new URLSearchParams(params).toString();
 fetch(url)
 ```
 - REST : 
 ```
-GET http://localhost:8080/Products/search?Search=E
+GET https://mockmate.netlify.app/Products/search?Search=E
 ```
 ### - Product Categories
 * Will return all Procuct Categories
 - Javascript(Fetch) : 
 ```
-fetch('http://localhost:8080/Products/Categories')
+fetch('https://mockmate.netlify.app/Products/Categories')
 ```
 - REST : 
 ```
-	GET http://localhost:8080/Products/Categories
+	GET https://mockmate.netlify.app/Products/Categories
 ```
 
 ### - Products By Category
@@ -568,11 +568,11 @@ fetch('http://localhost:8080/Products/Categories')
 * Accepts both limit and skip. By default returns first 20
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Products/Category/smartphones')
+fetch('https://mockmate.netlify.app/Products/Category/smartphones')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Products/Category/smartphones
+GET https://mockmate.netlify.app/Products/Category/smartphones
 ```
 
 ### - Add Product
@@ -580,7 +580,7 @@ GET http://localhost:8080/Products/Category/smartphones
 * Parameters {"title" : "string",	"description" : "string" , "price" : "number" , "discountPercentage" : "number" ,"rating" : "number" , "stock" : "number" , "brand" : "string" , "category" : "string" ,"thumbnail" : "string" , "images" : "array"}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Products/add', {
+fetch('https://mockmate.netlify.app/Products/add', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
@@ -601,7 +601,7 @@ fetch('http://localhost:8080/Products/add', {
 ``` 
 - REST : 
 ```
-POST  http://localhost:8080/Products/add
+POST  https://mockmate.netlify.app/Products/add
 Content-Type: application/json
 
 {
@@ -622,7 +622,7 @@ Content-Type: application/json
 * Parameters {"title" : "string",	"description" : "string" , "price" : "number" , "discountPercentage" : "number" ,"rating" : "number" , "stock" : "number" , "brand" : "string" , "category" : "string" ,"thumbnail" : "string" , "images" : "array"}
 Javascript :
 ```
-fetch('http://localhost:8080/Products/p/5', {
+fetch('https://mockmate.netlify.app/Products/p/5', {
   method: 'PUT',
   headers: {
     'Content-Type': 'application/json'
@@ -634,7 +634,7 @@ fetch('http://localhost:8080/Products/p/5', {
 ```
 - REST : 
 ```
-PUT http://localhost:8080/Products/p/5
+PUT https://mockmate.netlify.app/Products/p/5
 Content-Type: application/json
 
 {
@@ -644,11 +644,11 @@ Content-Type: application/json
 ### - Delete Product
 - Javascript(Fetch) : 
 ```
-fetch('http://localhost:8080/Products/Product/206', {method: 'DELETE',})
+fetch('https://mockmate.netlify.app/Products/Product/206', {method: 'DELETE',})
 ```
 - REST : 
 ```
-DELETE  http://localhost:8080/Products/Product/206
+DELETE  https://mockmate.netlify.app/Products/Product/206
 ```
 
 ## Quotes
@@ -660,32 +660,32 @@ DELETE  http://localhost:8080/Products/Product/206
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Quotes')
+fetch('https://mockmate.netlify.app/Quotes')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Quotes
+GET https://mockmate.netlify.app/Quotes
 ```
 
 ### - Single Quote
 * Will return one Quote requested by ID
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Quotes/q/6')
+fetch('https://mockmate.netlify.app/Quotes/q/6')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Quotes/q/6
+GET https://mockmate.netlify.app/Quotes/q/6
 ```
 ### - Random Quote
 * Will return random Quote
 - Javascript(Fetch) :
 ```
-fetch("http://localhost:8080/Quotes/random")
+fetch("https://mockmate.netlify.app/Quotes/random")
 ```
 - REST : 
 ```
-GET http://localhost:8080/Quotes/random
+GET https://mockmate.netlify.app/Quotes/random
 ```
 
 ## Recipes
@@ -697,33 +697,33 @@ GET http://localhost:8080/Quotes/random
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Recipes')
+fetch('https://mockmate.netlify.app/Recipes')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Recipes
+GET https://mockmate.netlify.app/Recipes
 ```
 
 ### - Single Recipe
 * Will return one Recipe requested by ID
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Recipes/r/123')
+fetch('https://mockmate.netlify.app/Recipes/r/123')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Recipes/r/123
+GET https://mockmate.netlify.app/Recipes/r/123
 ```
 ### - Search Recipes
 * Will return first 10 Recipes by default
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Recipes/search?Search=Eth')
+fetch('https://mockmate.netlify.app/Recipes/search?Search=Eth')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Recipes/search?Search=Eth
+GET https://mockmate.netlify.app/Recipes/search?Search=Eth
 ```
 
 ## Todos
@@ -735,33 +735,33 @@ GET http://localhost:8080/Recipes/search?Search=Eth
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/todos')
+fetch('https://mockmate.netlify.app/todos')
 ```
 - REST : 
 ```
-GET http://localhost:8080/todos
+GET https://mockmate.netlify.app/todos
 ```
 
 ### - Single Todo
 * Will return one todo requested by ID
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/todos/t/2')
+fetch('https://mockmate.netlify.app/todos/t/2')
 ```
 - REST : 
 ```
-GET http://localhost:8080/todos/t/2
+GET https://mockmate.netlify.app/todos/t/2
 ```
 
 ### - Random Todo
 * Will return random Todo
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/todos/random')
+fetch('https://mockmate.netlify.app/todos/random')
 ```
 - REST : 
 ```
-GET http://localhost:8080/todos/random
+GET https://mockmate.netlify.app/todos/random
 ```
 
 ### - Todo By User
@@ -770,11 +770,11 @@ GET http://localhost:8080/todos/random
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/todos/user/1')
+fetch('https://mockmate.netlify.app/todos/user/1')
 ```
 - REST : 
 ```
-GET http://localhost:8080/todos/user/1
+GET https://mockmate.netlify.app/todos/user/1
 ```
 
 ### - Add Todo
@@ -782,7 +782,7 @@ GET http://localhost:8080/todos/user/1
 * Parameters { todo: "string", userId: "number" }
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/todos/add', {
+fetch('https://mockmate.netlify.app/todos/add', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
@@ -795,7 +795,7 @@ fetch('http://localhost:8080/todos/add', {
 ```
 - REST : 
 ```
-POST  http://localhost:8080/todos/add
+POST  https://mockmate.netlify.app/todos/add
 Content-Type: application/json
 
 {
@@ -809,7 +809,7 @@ Content-Type: application/json
 * Parameters { todo: "string", userId: "number" }
 - Javascript(Fetch) : 
 ```
-fetch('http://localhost:8080/todos/t/2', {
+fetch('https://mockmate.netlify.app/todos/t/2', {
   method: 'PUT',
   headers: {
     'Content-Type': 'application/json'
@@ -821,7 +821,7 @@ fetch('http://localhost:8080/todos/t/2', {
 ``` 
 - REST : 
 ```
-PUT  http://localhost:8080/todos/t/2
+PUT  https://mockmate.netlify.app/todos/t/2
 Content-Type: application/json
 
 {
@@ -831,11 +831,11 @@ Content-Type: application/json
 ### - Delete Todo
 Javscript(Fetch) :
 ```
-fetch("http://localhost:8080/todos/t/201",{method:'DELETE'})
+fetch("https://mockmate.netlify.app/todos/t/201",{method:'DELETE'})
 ```
 - REST : 
 ```
-DELETE   http://localhost:8080/todos/t/201
+DELETE   https://mockmate.netlify.app/todos/t/201
 ```
 
 ## Users
@@ -847,21 +847,21 @@ DELETE   http://localhost:8080/todos/t/201
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Users')
+fetch('https://mockmate.netlify.app/Users')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Users
+GET https://mockmate.netlify.app/Users
 ```
 ### - Single User
 * Will return one User requested by ID
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Users/user/5')
+fetch('https://mockmate.netlify.app/Users/user/5')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Users/user/5
+GET https://mockmate.netlify.app/Users/user/5
 ```
 
 ### - Search Users
@@ -869,11 +869,11 @@ GET http://localhost:8080/Users/user/5
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Users/search?Search=Emily Smith Johnson')
+fetch('https://mockmate.netlify.app/Users/search?Search=Emily Smith Johnson')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Users/search?Search=Emily Smith Johnson
+GET https://mockmate.netlify.app/Users/search?Search=Emily Smith Johnson
 ```
 
 ### - Filter Users
@@ -882,11 +882,11 @@ GET http://localhost:8080/Users/search?Search=Emily Smith Johnson
 * Accepts Both limit and skip in query example {?limit=2&skip=1} 
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Users/filter?key=hair.color&value=Red')
+fetch('https://mockmate.netlify.app/Users/filter?key=hair.color&value=Red')
 ```
 REST:
 ```
-GET http://localhost:8080/Users/filter?key=hair.color&value=Red
+GET https://mockmate.netlify.app/Users/filter?key=hair.color&value=Red
 ```
 
 ### - Sort Users
@@ -897,18 +897,18 @@ GET http://localhost:8080/Users/filter?key=hair.color&value=Red
 * Accepts both limit and skip in query  example {?limit=10&skip=5}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Users/sort?sortby=firstName&order=desc&limit=2&skip=1')
+fetch('https://mockmate.netlify.app/Users/sort?sortby=firstName&order=desc&limit=2&skip=1')
 ```
 - REST : 
 ```
-GET http://localhost:8080/Users/sort?sortby=firstName&order=desc&limit=2&skip=1
+GET https://mockmate.netlify.app/Users/sort?sortby=firstName&order=desc&limit=2&skip=1
 ```
 
 ### - Add User
 * Some Fields will be added by default for future sorting or other actions
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Users/add', {
+fetch('https://mockmate.netlify.app/Users/add', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
@@ -922,7 +922,7 @@ fetch('http://localhost:8080/Users/add', {
 ```  
 - REST : 
 ```
-POST  http://localhost:8080/Users/add
+POST  https://mockmate.netlify.app/Users/add
 Content-Type: application/json
 
 {
@@ -938,7 +938,7 @@ Content-Type: application/json
 * { firstName: "", lastName: "", maidenName: "", age: 18,gender: "", email: "",phone: "",username: "",password: "",birthDate: "",image: "",bloodGroup: "",height: 0,weight: 0,eyeColor: "",hair: {  color: "",  type: ""},ip: "",address: {  address: "",  city: "",  state: "",  stateCode: "",  postalCode: "",  coordinates:    lat: 0,    lng: 0  },  country: ""},macAddress: "",university: "",bank: {  cardExpire: "",  cardNumber: "",  cardType: "",  currency: "",  iban: ""},company: {  department: "",  name: "",  title: "",  address: {    address: "",    city: "",    stateCode: "",    state: "",    postalCode: "",    coordinates: {      lat: 0,      lng: 0    },    country: ""  }},ein: "",ssn: "",userAgent: "",crypto: {  coin: "",  wallet: "",  network: ""},role: ""}
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Users/user/5', {
+fetch('https://mockmate.netlify.app/Users/user/5', {
   method: 'PUT',
   headers: {
     'Content-Type': 'application/json'
@@ -951,7 +951,7 @@ fetch('http://localhost:8080/Users/user/5', {
 ```
 - REST : 
 ```
-PUT http://localhost:8080/Users/user/5
+PUT https://mockmate.netlify.app/Users/user/5
 Content-Type: application/json
 
 {
@@ -961,9 +961,9 @@ Content-Type: application/json
 ### - Delete User
 - Javascript(Fetch) :
 ```
-fetch('http://localhost:8080/Users/user/206')
+fetch('https://mockmate.netlify.app/Users/user/206')
 ```
 - REST : 
 ```
-DELETE  http://localhost:8080/Users/user/206
+DELETE  https://mockmate.netlify.app/Users/user/206
 ```
