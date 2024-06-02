@@ -839,7 +839,7 @@ DELETE   https://mockmate.netlify.app/todos/t/201
 ```
 
 ## Users
-* Modules : All User, Single User, Search Users, Filter Users, Sort Users, Add User, Update post, Delete User
+* Modules : All User, Single User, Search Users, Filter Users, Sort Users, Add User, Update User, Delete User
 * URL : /Users/
 
 ### - All User
