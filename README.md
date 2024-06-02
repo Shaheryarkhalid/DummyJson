@@ -37,7 +37,7 @@ npm run dev
 OR
 ```
 npm start
-```
+```  
 * You can Access Project at 
 ```
 https://mockmate.netlify.app/
